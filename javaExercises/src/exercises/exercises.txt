@@ -1,0 +1,136 @@
+**** Exercises week 1 ***
+
+Welcome to exercises 1! Please read the below carefully.
+
+General instructions
+----------------------
+- Files for the exercises are in directory src/exercises (i.e. files you write Java code in).
+- Last in the file header comment (the gray text) for each file is a "See: ..." reference.
+  This means there are code samples in the src/samples directory to help you.
+  The samples are all possible to run, modify, experiment, etc.
+- If stuck, confused or problems to understand, ASK in the exercise and lab sessions!
+
+Exercises
+---------
+
+1.  See Ex1BMI. Implement a program to calculate body mass index. Program should look like this when run:
+
+    Please, enter your weight (kg) > 76
+    Please, enter your height (m) > 1.85
+    BMI = 22.205989773557338
+
+2.  See Ex2Methods. Implement the methods (uncomment one row at a time). Program run should output the following when run:
+
+    true
+    true
+    true
+    true
+    true
+    true
+    true
+    Winner is Olle
+
+3.  See Ex3ClassesObjects. Use the class Hero to create 2 heroes (hero objects) to be used as follows:
+
+    What's the name of the hero 1? > Hercules      (input data)
+    How strong is Hercules > 34
+    What's the name of the hero 2? > Atlas
+    How strong is Atlas > 45
+    Atlas is stronger
+
+    NOTE: When reading a number the scanner will leave the last char (the enter char, '\n') because
+    it can not be part of any number. To get rid of the enter char use an extra sc.readLine().
+    Else strange behaviour for program (seems like it skips an input).
+
+4.  See Ex4ReadPlayers. Implement the exercise to run like:
+
+    How many players? > 2
+    Name for player 1 > Olle
+    Name for player 2 > Fia
+    Players are:
+    Name Olle points 0         (A player by default has 0 points)
+    Name Fia points 0
+
+    a) Add a constructor to the Player class. The constructor should make it possible to set
+    the name of the player when the player object is created.
+
+    b) Implement methods inputPlayers() and outputPlayers(). Use the constructor when initializing!
+
+    AGAIN: When mixing numerical and text input you have to remove the trailing enter key
+    ('\n') in input stream when reading numbers. Use an extra sc.readLine() to fix.
+
+5.  See Ex5Theory. Just uncomment (possibly run) and explain result (write it here)
+    1.  (write short explanation)
+    2.
+    3.
+    4.
+    5.
+
+6.  See ex6useaclass directory. Implement the class Rational so that all tests
+    in Ex1TestRational pass.
+
+    TIP: Always store rationals in shortest form,
+    https://en.wikipedia.org/wiki/Euclidean_algorithm
+
+    TIP: It's possible to generate the equals and hashCode methods (possibly modify
+    and/or clean up a bit)
+
+7.  See ex7usemoreclasses. Implement classes Point and Triangle so that all test
+    in Ex7TestPointTriangle passes. Triangle should use Point and should use Herons
+    formula to calculate the area, See https://en.wikipedia.org/wiki/Heron%27s_formula
+
+8.  See directory ex8hangman. Implement a text based object oriented version of the Hangman game
+    See: https://en.wikipedia.org/wiki/Hangman_(game).
+
+    - All classes needed are there.
+    - Break down and decide which data and which method in which classes.
+    - The main class, with the game loop is CLI (also contains all IO)
+    - Let CLI do calls on the HangMan class (only) to do the work. Hangman will in
+      turn delegate to other objects to fulfill their part of the work.
+    - Make a sketch discuss with assistants
+
+    A run of the game outputs:
+
+    Welcome to HangMan, try to guess the word! It's 7 char long
+    Enter a char > i
+
+    i _ _ _ _ _ _
+    Enter a char > x
+    ---|
+
+    i _ _ _ _ _ _
+    Enter a char > n
+    ---|
+
+    i n _ _ _ n _
+    Enter a char > x
+    ---|
+       |
+
+    i n _ _ _ n _
+    Enter a char > x
+    ---|
+       |
+       O
+
+    ... (etc)
+
+    i n _ _ _ n _
+    Enter a char > x
+    ---|
+       |
+       O
+      /|\
+      /
+    i n _ _ _ n _
+    Enter a char > x
+    ---|
+       |
+       O
+      /|\
+      / \
+
+    i n _ _ _ n _
+    Sorry you lost. Word was: instans
+
+    (if win: Congratulation you made it! Word was ..)
