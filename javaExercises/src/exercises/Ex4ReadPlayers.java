@@ -31,18 +31,34 @@ public class Ex4ReadPlayers {
         int points;    // ... and points
 
         // TODO Add a constructor
+        Player(String name) {
+            this.name = name;
+            points = 0;
+        }
     }
 
     // ---------- Methods -------------------
 
      Player[] inputPlayers() {
-        // TODO
-        return null;   // For now
+        System.out.print("How many players? > ");
+        int numOfPlayers = sc.nextInt();
+        sc.nextLine();
+        Player[] playerArray = new Player[numOfPlayers];
+
+        for(int i = 1; i <= numOfPlayers; i++) {
+            System.out.printf("Name for player %d > ", i);
+            String name = sc.nextLine();
+            playerArray[i-1] = new Player(name);
+        }
+
+        return playerArray;
     }
 
     void outPlayers(Player[] players){
-       // TODO
+        System.out.println("Players are:");
+        for (Player player : players) {
+            System.out.printf("Name %s points %d\n", player.name, player.points);
+        }
     }
-
 
 }

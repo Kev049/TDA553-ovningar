@@ -60,11 +60,17 @@ Exercises
     ('\n') in input stream when reading numbers. Use an extra sc.readLine() to fix.
 
 5.  See Ex5Theory. Just uncomment (possibly run) and explain result (write it here)
-    1.  (write short explanation)
-    2.
-    3.
-    4.
-    5.
+    1.  The first one is right as the numerator is a double and not an int.
+    2.  Duplicate x variables and final print statement uses y which is out-of-scope.
+    3.  The "innacurate" result seems to occur due to behaviour associated with floating-point arithmetic. 
+    4.   * Expected arithmetic
+         * Prints a String
+         * Does addition first and then concatenates string
+         * concatenates everything as if it were a string as it finds a string first
+         * Since 'a' is a char, it's ASCII code is used ('a' = 97) so 100 is printed.
+         * The char 'a' is treated as a String and concatenated
+    5.  I would imagine this is a design choice that was made as the primary purpose of constructors is to
+        make sure all instance variables are not null.
 
 6.  See ex6useaclass directory. Implement the class Rational so that all tests
     in Ex1TestRational pass.
