@@ -10,7 +10,7 @@ General instructions
   The samples are all possible to run, modify, experiment, etc.
 - If stuck, confused or problems to understand, ASK in the exercise and lab sessions!
 
-Exercises
+Exercises 
 ---------
 
 1.  See Ex1BMI. Implement a program to calculate body mass index. Program should look like this when run:
