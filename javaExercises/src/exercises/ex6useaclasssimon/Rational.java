@@ -16,7 +16,7 @@ import static java.lang.Math.abs;
 //https://stackoverflow.com/questions/965690/how-do-i-use-optional-parameters-in-java 
 public class Rational {
     private final int numerator;
-    int denominator;
+    private final int denominator;
 
         Rational(int num) {
             this.numerator = num;
