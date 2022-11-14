@@ -45,7 +45,7 @@ public class Ex4ReadPlayers {
         sc.nextLine();
         Player[] playerArray = new Player[numOfPlayers];
 
-        for(int i = 1; i <= numOfPlayers; i++) {
+        for (int i = 1; i <= numOfPlayers; i++) {
             System.out.printf("Name for player %d > ", i);
             String name = sc.nextLine();
             playerArray[i-1] = new Player(name);
