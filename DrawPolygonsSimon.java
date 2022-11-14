@@ -2,12 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.*;
 
-public class DrawPolygons extends Component{
+public class DrawPolygonsSimon extends Component{
     private ArrayList<String> polygonNames;
     private ArrayList<Point>  centerPoints;
     private int offset = 10;
 
-    public DrawPolygons(){
+    public DrawPolygonsSimon(){
         polygonNames = new ArrayList<>(offset);
         centerPoints = new ArrayList<>(offset);
                                       
@@ -43,7 +43,7 @@ public class DrawPolygons extends Component{
 
     public static void main(String[] args) {
         JFrame frame = new JFrame();
-        DrawPolygons polygons = new DrawPolygons();
+        DrawPolygonsSimon polygons = new DrawPolygonsSimon();
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setBounds(30,30,300,300);
