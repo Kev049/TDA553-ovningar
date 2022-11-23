@@ -45,9 +45,11 @@ public class ARSet implements Iterable<Integer>{
     }
     
     /**
-     * Deletes an integer from the set. If the integer is not present in the set, the set is left unchanged.
      * @param i is the integer to be added.
-     */
+     *
+     * Deletes an integer from the set. If the integer is not present in the set, the set is left unchanged.
+     * 
+     * */
     public void delete(Integer i) {
         elems.remove(i);
     }
